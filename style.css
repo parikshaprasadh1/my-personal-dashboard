@@ -20,3 +20,59 @@ body{
   overflow-x: hidden;
   background: floralwhite;
 }
+.container{
+display: grid;
+width: 96%;
+grid-template-columns: 14rem auto 14rem;
+margin: 0 auto;
+}
+
+a{
+color: peru;
+}
+
+h1{
+font-weight: 800;
+font-size: 1.8rem;
+color: ;
+}
+h2{
+font-size: 1.4rem;
+color: ;
+}
+h3{
+font-size: 0.87rem;
+color: ;
+}
+h4{
+font-size: 0.8rem;
+color: ;
+}
+h5{
+font-size: 0.77rem;
+color: ;
+}
+small{
+font-size: 0.75rem;
+color: ;
+}
+
+.profile-photo img{
+width: 3rem;
+position: absolute;
+height: 3rem;
+border-radius: 50%;
+overflow: hidden;
+right: 10px;
+top: 10px;
+}
+.profile-photo h1{
+position: absolute;
+right: 73px;
+font-size: 1.2rem;
+top: 22px;
+align-items: right;
+}
+.danger{
+color: red;
+}
