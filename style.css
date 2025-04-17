@@ -144,3 +144,98 @@ background-color: peru;
 aside .sidebar a:hover span{
 margin-left: 1rem;
 }
+.dash h1{
+font-size: 4rem;
+margin-top: 10px;
+margin-left: 50px;
+color: peru;
+}
+.todo{
+width: 100%;
+max-width: 540px;
+background: papayawhip;
+margin: 20px 30px 30px;
+padding: 20px 20px 50px;
+border-radius: 10px;
+}
+.todo h2{
+color: peru;
+font-size: 1rem;
+display: flex;
+align-items: left;
+margin-bottom: 20px;
+}
+
+.row{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: white;
+border-radius: 30px;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+
+input{
+flex: 1;
+border: none;
+outline: none;
+background: transparent;
+padding: 5px;
+font-weight: 14px;
+}
+
+button{
+border: none;
+outline: none;
+background: peru;
+padding: 5px 20px;
+color: white;
+font-size: 16px;
+cursor: pointer;
+border-radius: 40px;
+}
+
+ul li{
+list-style: none;
+color: peru;
+font-size: 17px;
+padding: 12px 8px 12px 50px;
+user-select: none;
+cursor: pointer;
+position: relative;
+}
+ul li::before{
+content:'';
+position: absolute;
+height: 28px;
+width: 28px;
+border-radius: 50%;
+background-image: url(images/nope.png);
+background-size: cover;
+background-position: center;
+top: 10px;
+left: 8px;
+}
+ul li.checked{
+colour: beige;
+text-decoration: line-through;
+}
+ul li.checked::before{
+background-image: url(images/yup.png);
+}
+ul li span{
+position: absolute;
+right: 0;
+top: 4px;
+width: 40px;
+height: 40px;
+font-size: 22px;
+color: red;
+line-height: 40px;
+text-align: center;
+border-radius: 50%;
+}
+ul li span:hover{
+background: navajowhite;
+}
