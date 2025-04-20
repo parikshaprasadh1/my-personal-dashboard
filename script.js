@@ -29,6 +29,7 @@ else if(e.target.tagName === "SPAN"){
 e.target.parentElement.remove();
 }
 }, false);
+
 const monthYear = document.getElementById("month-year");
 const daysContainer = document.getElementById("days");
 
@@ -70,6 +71,7 @@ dateDiv.classList.add("today"); // Highlight today
 }
 daysContainer.appendChild(dateDiv);
 }
+
 function updateClock() {
 const now = new Date();
 let hours = now.getHours().toString().padStart(2, '0');
