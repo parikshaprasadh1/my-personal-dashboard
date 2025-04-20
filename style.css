@@ -278,3 +278,15 @@ color: white;
 border-radius: 50%;
 font-weight: bold;
 }
+.clock {
+background: papayawhip;
+color: peru;
+position: absolute;
+top: 325px;
+right: 10px;
+padding: 30px 50px;
+border-radius: 15px;
+font-size: 48px;
+letter-spacing: 2px;
+width: 300px;
+}
