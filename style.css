@@ -20,6 +20,7 @@ body{
   overflow-x: hidden;
   background: floralwhite;
 }
+
 .container{
 display: grid;
 width: 96%;
@@ -34,11 +35,11 @@ color: peru;
 h1{
 font-weight: 800;
 font-size: 1.8rem;
-color: ;
+color: black;
 }
 h2{
 font-size: 1.4rem;
-color: ;
+color: peru;
 }
 h3{
 font-size: 0.87rem;
@@ -73,9 +74,29 @@ font-size: 1.2rem;
 top: 22px;
 align-items: right;
 }
+
+.text-muted{
+color: ;
+}
+p{
+color: ;
+}
+b{
+color: ;
+}
+.primary{
+color: ;
+}
+.success{
+color: green;
+}
 .danger{
 color: red;
 }
+.warning{
+color: yellow;
+}
+
 /* aside */
 
 aside{
@@ -123,13 +144,8 @@ aside .sidebar a span{
 font-size: 1.6rem;
 transition:all .1s ease-in;
 }
-aside .sidebat a:last-child{
-position: absolute;
-bottom: 1rem;
-width: 100%;
-}
 aside .sidebar a:active{
-background: peachpuff;
+background: navajowhite;
 color: peru;
 margin-left: 0;
 border-left: 5px solid peru;
@@ -144,12 +160,14 @@ background-color: peru;
 aside .sidebar a:hover span{
 margin-left: 1rem;
 }
+
 .dash h1{
 font-size: 4rem;
 margin-top: 10px;
 margin-left: 50px;
 color: peru;
 }
+
 .todo{
 width: 100%;
 max-width: 540px;
@@ -218,7 +236,7 @@ top: 10px;
 left: 8px;
 }
 ul li.checked{
-colour: beige;
+color: tan;
 text-decoration: line-through;
 }
 ul li.checked::before{
@@ -278,6 +296,7 @@ color: white;
 border-radius: 50%;
 font-weight: bold;
 }
+
 .clock {
 background: papayawhip;
 color: peru;
@@ -289,4 +308,65 @@ border-radius: 15px;
 font-size: 48px;
 letter-spacing: 2px;
 width: 300px;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin: 20px 50px;
+}
+
+.todo {
+  flex: 1;
+  max-width: 540px;
+}
+
+.sticky {
+  width: 400px;
+  padding: 10px;
+}
+
+#image-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.note-wrapper{
+position: relative;
+display: block;
+margin: 20px auto;
+width: 350px;
+height: 300px;
+}
+.note-image{
+width: 100%;
+height: 100%;
+border-radius: 10px;
+object-fit: cover;
+display: block;
+}
+.cls-btn{
+position: absolute;
+top: 10px;
+left: 50px;
+font-size: 30px;
+color: red;
+font-weight: bold;
+cursor: pointer;
+z-index: 1;
+}
+.note-text{
+position: absolute;
+top: 80px;
+left: 70px;
+background: transparent;
+border: none;
+outline: none;
+width: calc(100% - 100px);
+height: calc(100% - 100px);
+resize: none;
+font-family: "Dancing Script", cursive;
 }
