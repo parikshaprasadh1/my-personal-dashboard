@@ -239,3 +239,42 @@ border-radius: 50%;
 ul li span:hover{
 background: navajowhite;
 }
+right{
+height: 100vh;
+}
+
+.calendar {
+width: 300px;
+position: absolute;
+border-radius: 10px;
+color: peru;
+padding: 10px;
+text-align: center;
+margin-top: 80px;
+background-color: papayawhip;
+right: 10px; 
+}
+
+.calendar h3{
+margin: 0;
+font-size: 1.2rem;
+}
+.days {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+margin-top: 10px;
+}
+.day, .date {
+padding: 5px;
+font-size: 14px;
+}
+.day {
+font-weight: bold;
+background: navajowhite;
+}
+.today {
+background-color: peru;
+color: white;
+border-radius: 50%;
+font-weight: bold;
+}
