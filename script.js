@@ -70,3 +70,35 @@ dateDiv.classList.add("today"); // Highlight today
 }
 daysContainer.appendChild(dateDiv);
 }
+function updateClock() {
+const now = new Date();
+let hours = now.getHours().toString().padStart(2, '0');
+let minutes = now.getMinutes().toString().padStart(2, '0');
+let seconds = now.getSeconds().toString().padStart(2, '0');
+document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+}
+// Initial call + interval
+updateClock();
+setInterval(updateClock, 1000);
+
+function addNote(){
+const cont = document.getElementById("image-container");
+const wrapper = document.createElement("li");
+wrapper.classList.add("note-wrapper");
+const img = document.createElement("img");
+img.src="images/sticky.png";
+img.classList.add("note-image");
+const cls = document.createElement("span");
+cls.innerHTML = "\u00d7";
+cls.classList.add("cls-btn");
+cls.onclick = function(){
+cont.removeChild(wrapper);
+}
+const textArea=document.createElement("textarea");
+textArea.classList.add("note-text");
+textArea.placeholder="Type here...";
+wrapper.appendChild(img);
+wrapper.appendChild(cls);
+wrapper.appendChild(textArea);
+cont.appendChild(wrapper);
+}
