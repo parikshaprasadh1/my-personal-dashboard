@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+border: 0;
+list-style: none;
+appearance: none;
+}
+
+body{
+  font-family: "Poetsen One", sans-serif;
+  font-style: normal;
+  width: 100vw;
+  height: 100vh;
+  font-size: 0.88rem;
+  user-select: none;
+  overflow-x: hidden;
+  background: floralwhite;
+}
+
+.container{
+display: grid;
+width: 96%;
+grid-template-columns: 14rem auto 14rem;
+margin: 0 auto;
+}
+
+a{
+color: peru;
+}
+
+h1{
+font-weight: 800;
+font-size: 1.8rem;
+color: black;
+}
+h2{
+font-size: 1.4rem;
+color: peru;
+}
+h3{
+font-size: 0.87rem;
+color: ;
+}
+h4{
+font-size: 0.8rem;
+color: ;
+}
+h5{
+font-size: 0.77rem;
+color: ;
+}
+small{
+font-size: 0.75rem;
+color: ;
+}
+
+.profile-photo img{
+width: 3rem;
+position: absolute;
+height: 3rem;
+border-radius: 50%;
+overflow: hidden;
+right: 10px;
+top: 10px;
+}
+.profile-photo h1{
+position: absolute;
+right: 73px;
+font-size: 1.2rem;
+top: 22px;
+align-items: right;
+}
+
+.text-muted{
+color: ;
+}
+p{
+color: ;
+}
+b{
+color: ;
+}
+.primary{
+color: ;
+}
+.success{
+color: green;
+}
+.danger{
+color: red;
+}
+.warning{
+color: yellow;
+}
+
+/* aside */
+
+aside{
+height: 100vh;
+}
+aside .top{
+background-color: papayawhip;
+display: flex;
+justify-content: space-around;
+margin-top: 1.4rem;
+}
+aside .logo{
+display: flex;
+gap: 1rem;
+}
+aside .top div.close{
+display: none;
+}
+
+/* sidebar */
+
+aside .sidebar{
+background-color: papayawhip;
+display: flex;
+flex-direction: column;
+height: 85vh;
+position: relative;
+top: 1rem;
+}
+
+aside .h3{
+font-weight: 400;
+}
+
+aside .sidebar a{
+display: flex;
+color: peru;
+gap: 1rem;
+align-items: center;
+height: 3.2rem;
+transition:all .1s ease-in;
+}
+
+aside .sidebar a span{
+font-size: 1.6rem;
+transition:all .1s ease-in;
+}
+aside .sidebar a:active{
+background: navajowhite;
+color: peru;
+margin-left: 0;
+border-left: 5px solid peru;
+}
+aside .sidebar a.active::before{
+content: '';
+margin-left: 0;
+width: 5px;
+height: 100%;
+background-color: peru;
+}
+aside .sidebar a:hover span{
+margin-left: 1rem;
+}
+
+.dash h1{
+font-size: 4rem;
+margin-top: 10px;
+margin-left: 50px;
+color: peru;
+}
+
+.todo{
+width: 100%;
+max-width: 540px;
+background: papayawhip;
+margin: 20px 30px 30px;
+padding: 20px 20px 50px;
+border-radius: 10px;
+}
+.todo h2{
+color: peru;
+font-size: 1rem;
+display: flex;
+align-items: left;
+margin-bottom: 20px;
+}
+
+.row{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background: white;
+border-radius: 30px;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+
+input{
+flex: 1;
+border: none;
+outline: none;
+background: transparent;
+padding: 5px;
+font-weight: 14px;
+}
+
+button{
+border: none;
+outline: none;
+background: peru;
+padding: 5px 20px;
+color: white;
+font-size: 16px;
+cursor: pointer;
+border-radius: 40px;
+}
+
+ul li{
+list-style: none;
+color: peru;
+font-size: 17px;
+padding: 12px 8px 12px 50px;
+user-select: none;
+cursor: pointer;
+position: relative;
+}
+ul li::before{
+content:'';
+position: absolute;
+height: 28px;
+width: 28px;
+border-radius: 50%;
+background-image: url(images/nope.png);
+background-size: cover;
+background-position: center;
+top: 10px;
+left: 8px;
+}
+ul li.checked{
+color: tan;
+text-decoration: line-through;
+}
+ul li.checked::before{
+background-image: url(images/yup.png);
+}
+ul li span{
+position: absolute;
+right: 0;
+top: 4px;
+width: 40px;
+height: 40px;
+font-size: 22px;
+color: red;
+line-height: 40px;
+text-align: center;
+border-radius: 50%;
+}
+ul li span:hover{
+background: navajowhite;
+}
+right{
+height: 100vh;
+}
+
+.calendar {
+width: 300px;
+position: absolute;
+border-radius: 10px;
+color: peru;
+padding: 10px;
+text-align: center;
+margin-top: 80px;
+background-color: papayawhip;
+right: 10px; 
+}
+
+.calendar h3{
+margin: 0;
+font-size: 1.2rem;
+}
+.days {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+margin-top: 10px;
+}
+.day, .date {
+padding: 5px;
+font-size: 14px;
+}
+.day {
+font-weight: bold;
+background: navajowhite;
+}
+.today {
+background-color: peru;
+color: white;
+border-radius: 50%;
+font-weight: bold;
+}
+
+.clock {
+background: papayawhip;
+color: peru;
+position: absolute;
+top: 325px;
+right: 10px;
+padding: 30px 50px;
+border-radius: 15px;
+font-size: 48px;
+letter-spacing: 2px;
+width: 300px;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin: 20px 50px;
+}
+
+.todo {
+  flex: 1;
+  max-width: 540px;
+}
+
+.sticky {
+  width: 400px;
+  padding: 10px;
+}
+
+#image-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.note-wrapper{
+position: relative;
+display: block;
+margin: 20px auto;
+width: 350px;
+height: 300px;
+}
+.note-image{
+width: 100%;
+height: 100%;
+border-radius: 10px;
+object-fit: cover;
+display: block;
+}
+.cls-btn{
+position: absolute;
+top: 10px;
+left: 50px;
+font-size: 30px;
+color: red;
+font-weight: bold;
+cursor: pointer;
+z-index: 1;
+}
+.note-text{
+position: absolute;
+top: 80px;
+left: 70px;
+background: transparent;
+border: none;
+outline: none;
+width: calc(100% - 100px);
+height: calc(100% - 100px);
+resize: none;
+font-family: "Dancing Script", cursive;
+}
