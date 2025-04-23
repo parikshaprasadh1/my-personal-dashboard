@@ -88,7 +88,7 @@ const cont = document.getElementById("image-container");
 const wrapper = document.createElement("li");
 wrapper.classList.add("note-wrapper");
 const img = document.createElement("img");
-img.src="images/sticky.png";
+img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRloSAHcCLQ9uolTnZ65pr_puw-Ra_tRlcDOXbir4uODY9YfwdF";
 img.classList.add("note-image");
 const cls = document.createElement("span");
 cls.innerHTML = "\u00d7";
