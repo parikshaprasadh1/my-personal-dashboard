@@ -229,7 +229,6 @@ position: absolute;
 height: 28px;
 width: 28px;
 border-radius: 50%;
-background-image: url(images/nope.png);
 background-size: cover;
 background-position: center;
 top: 10px;
@@ -240,7 +239,7 @@ color: tan;
 text-decoration: line-through;
 }
 ul li.checked::before{
-background-image: url(images/yup.png);
+background-image: url(https://static.vecteezy.com/system/resources/previews/017/177/781/non_2x/green-tick-check-mark-on-transparent-background-free-png.png);
 }
 ul li span{
 position: absolute;
